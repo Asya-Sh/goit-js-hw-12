@@ -1,0 +1,39 @@
+.form {
+  max-width: 360px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-form {
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  
+}
+
+.form-input:hover {
+  border-color: black;
+}
+
+.form-input:active {
+  border-color: #4e75ff;
+}
+
+.btn-search {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: white;
+  font-weight: 500;
+  width: 91px;
+  height: 36px;
+}
+
+.btn-search:hover {
+  background-color: #6c8cff;
+}

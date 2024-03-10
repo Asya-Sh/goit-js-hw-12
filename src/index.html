@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoIt JS hw 11</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <form class="form js-form">
+        <input
+          class="input-form"
+          type="text"
+          name="search"
+          id="name"
+          placeholder="Search images..."
+        />
+
+        <button class="btn-search" type="submit" js-search>Search</button>
+      </form>
+
+      <div class="wrapper">
+        <span class="loader is-hide"></span>
+      </div>
+
+      <ul class="gallery"></ul>
+    </section>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
