@@ -1,3 +1,4 @@
+import axios from 'axios';
 export axios function searchImages(query) {
   const BASE_URL = 'https://pixabay.com/';
   const END_POINT = 'api/';
