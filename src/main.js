@@ -14,7 +14,7 @@ function onSearchBtn(e) {
   clearMarkup();
 
   const searchInput = e.target.elements.search.value.trim().split(" ");
-  const userWord = searchInput.filter(word => word).join('+');
+  const userWord = searchInput.join('+');
 
   if (!userWord) {
     clearMarkup()

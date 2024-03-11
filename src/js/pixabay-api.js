@@ -1,4 +1,4 @@
-export function searchImages(query) {
+export axios function searchImages(query) {
   const BASE_URL = 'https://pixabay.com/';
   const END_POINT = 'api/';
   const params = new URLSearchParams({
@@ -10,9 +10,14 @@ export function searchImages(query) {
   });
   
   const url = `${BASE_URL}${END_POINT}?${params}`;
-
-  return fetch(url).then(res => {
-    if (!res.ok) throw new Error(res.status);
-    return res.json();
-  });
+  
+try {
+  const response = await axios.get(url);
+  if (response.status !== 200) {
+    throw new Error(response.status);
+  }
+  return response.data;
+} catch (error) {
+  throw new Error(error);
+}
 }
