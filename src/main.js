@@ -27,6 +27,9 @@ loadMoreImagesButton.addEventListener('click', onLoadMoreBtn);
 
 async function onSubmitBtn(e) {
   e.preventDefault();
+
+  currentPage = 1;
+  
   showLoader();
   clearMarkup();
   hideLoadBtn();
