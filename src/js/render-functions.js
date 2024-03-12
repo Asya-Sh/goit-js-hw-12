@@ -63,5 +63,5 @@ function imgTemplate(img) {
 }
 
 export function clearMarkup() {
-  gallery.innerHTML = "";
+  gallery.innerHTML = '';
 }

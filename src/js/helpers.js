@@ -1,6 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import error from '../img/error.svg';
+import warning from '../img/warning.svg';
 
 const loader = document.querySelector('.loader');
 export const loadMoreImagesButton = document.querySelector('.load-more');
@@ -32,10 +33,9 @@ export function hideLoadBtn() {
 }
 
 export function showLoadMessage(message) {
-  iziToast.error({
+  iziToast.warning({
     message,
-    backgroundColor: '#EF4040',
-    messageColor: '#fff',
     position: 'topRight',
+    iconUrl: warning,
   });
 }
