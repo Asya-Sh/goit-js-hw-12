@@ -6,11 +6,11 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-const gallery = document.querySelector('.gallery');
+export const gallery = document.querySelector('.gallery');
 
 export function renderImages(arr) {
   const markup = renderMarkup(arr);
-  gallery.innerHTML = markup;
+  gallery.insertAdjacentHTML('beforeend', markup);
   lightbox.refresh();
 }
 
@@ -63,5 +63,5 @@ function imgTemplate(img) {
 }
 
 export function clearMarkup() {
-  gallery.innerHTML = '';
+  gallery.innerHTML = "";
 }
